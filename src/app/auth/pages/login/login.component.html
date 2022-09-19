@@ -1,0 +1,71 @@
+<div
+  class="image"
+  alt="Responsive image"
+>
+
+  <div fxLayout="column" >
+    <div fxFlex class="example-button-container">
+      <button mat-mini-fab color="secundary" aria-label="Example icon button with a filter list icon" (click)="toBack()">
+        <mat-icon>keyboard_backspace</mat-icon>
+      </button>
+    </div>
+      <div fxFlex fxLayoutAlign="center" style="margin-top:4rem;">
+        <img src="../../../../assets/images/imagenInicioDeSesión.png">
+      </div>
+      <div fxFlex fxLayoutAlign="center center" style="margin-top:1rem;">
+        <span class="textUno">
+          Sign In To <span class="textDos">TreeWo</span> 
+        </span>
+      </div>
+
+      <div fxFlex fxLayoutAlign="center center" style="margin-top:4rem;">
+        <form [formGroup]="login" style="text-align:center;">
+          <div fxLayout="column">
+            <div fxFlex>
+              <mat-form-field
+                  style="width: 17rem"
+                  class="example-full-width"
+                  appearance="fill"
+                >
+                  <mat-label>Username</mat-label>
+                  <input
+                    type="user"
+                    matInput
+                    formControlName="user"
+                    placeholder="usuario@palmana.com"
+                  />
+                </mat-form-field>
+  
+            </div>
+            <div fxFlex>
+              <mat-form-field
+                style="width: 17rem"
+                appearance="fill"
+              >
+                <mat-label>Password</mat-label>
+                <input
+                  [type]="ocultarMostrarPassword"
+                  matInput
+                  formControlName="password"
+                  placeholder="***********"
+                />
+                <mat-icon matSuffix (click)="cambiarTipo()">{{
+                  !showEnableBtnPwd ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </mat-form-field>
+  
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+
+      <div fxFlex fxLayoutAlign="center" style="margin-top:4rem ;">
+        <button mat-raised-button class="colorButton" (click)="redirectHome()" [disabled]="login.invalid">Sign In</button>
+      </div>
+      
+      
+  </div>
+
+</div>

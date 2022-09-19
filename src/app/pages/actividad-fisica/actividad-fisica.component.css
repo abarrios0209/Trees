@@ -1,0 +1,17 @@
+.activity{
+    font-family: inherit;
+    font-size: 30px;
+}
+
+.subtitle{
+    margin-top: 27px;
+    color: #BDBDBD;
+    font-size: 10px;
+}
+
+.fecha{
+    color:#FFFFFF;
+    background-color:#8BC24A;
+    margin-right: 23px;
+    border-radius: 15%;
+}

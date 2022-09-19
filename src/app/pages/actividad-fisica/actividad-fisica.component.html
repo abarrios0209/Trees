@@ -1,0 +1,68 @@
+<div fxLayout="column">
+    
+    <div fxFlex fxLayout="row" fxLayoutAlign="start center" style="margin-top:4rem;margin-left: 10px;">
+        <div fxFlex class="example-button-container">
+            <button mat-mini-fab color="secundary" aria-label="Example icon button with a filter list icon" (click)="toBack()">
+              <mat-icon>keyboard_backspace</mat-icon>
+            </button>
+        </div>
+        <div fxFlex fxLayoutAlign="end center">
+            <button mat-mini-fab color="secundary" matTooltip="Log Out" aria-label="Example icon button with a filter list icon" (click)="logOut()">
+              <mat-icon>power_settings_new</mat-icon>
+            </button>
+          </div>
+    </div>
+
+    <div fxFlex fxLayoutAlign="center center" class="activity">
+        My Activity
+    </div>
+    <div fxFlex fxLayoutAlign="center center" class="subtitle">
+        Keep Moving Every Day To Meet Your Tree Goal.
+    </div>
+
+    <div fxFlex style="margin-top: 25px;">
+        <div style="display: block">
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                [legend]="barChartLegend" [chartType]="barChartType" [colors]="colors">
+            </canvas>
+        </div>
+    </div>
+
+    <div fxFlex style="margin-top:4rem;padding:2rem;">
+        <mat-card style="background-color: #F1F7E9;">
+            <div fxLayout="row">
+                <div fxFlex="20" fxLayoutAlign="center center" class="fecha">
+                    18 <br> Sep
+                </div>
+                <div fxFlex fxLayout="column">
+                    <div fxFlex style="font-family: serif;">
+                        <strong>
+                            Most Steps
+                        </strong>
+                    </div>
+                    <div fxFlex style="color: #BDBDBD;font-size: 10px;margin-top: 10px;">Sunday</div>
+                </div>
+                <div fxFlex fxLayoutAlign="end center">
+                    <strong style="color:#8BC24A;">
+                        81 km
+                    </strong> 
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <div fxFlex style="margin-top:4rem;">
+        <div fxLayout="row">
+          <div fxFlex fxLayoutAlign="end center" style="margin-right:2rem ;">
+              <img src="../../../assets/icons/walking-solid 1.svg">
+              <span style="margin-left:10px ; font-family: cursive;">Walking</span>
+          </div>
+          <div fxFlex fxLayoutAlign="start center">
+            <img src="../../../assets/icons/biking-solid 1.svg">
+            <span style="margin-left:10px ;font-family: cursive;">Cycling</span>
+          </div>
+
+        </div>
+  
+      </div>
+</div>

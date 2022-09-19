@@ -1,0 +1,127 @@
+<div
+  style="margin:1rem 1rem 0 1rem; ;"
+  alt="Responsive image"
+>
+
+  <div fxLayout="column" >
+      <div fxFlex fxLayout="row">
+        <div fxFlex fxLayoutAlign="center center">
+          <span class="titleLetra">Steps Number <span class="titleLetraDos">{{pasos}}</span></span> 
+        </div>
+        <div fxFlex fxLayoutAlign="center center">
+          <span class="titleLetra">Tree Number <span class="titleLetraDos">{{arboles}}</span></span> 
+        </div>
+        <div fxFlex fxLayoutAlign="end center">
+          <button mat-mini-fab color="secundary" matTooltip="Log Out" aria-label="Example icon button with a filter list icon" (click)="logOut()">
+            <mat-icon>power_settings_new</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div fxFlex fxLayoutAlign="start center"  style="margin-top:4rem; margin-left: 30px;">
+        <span class="textUno" >
+          Hi, walker 
+        </span>
+        </div>
+        <div fxFlex fxLayoutAlign="center center" style="text-align:center;">
+            <span class="textUnoA">You Have Walked <span class="textDos">{{pasos}}%</span> Of Your Goal</span> 
+        </div>
+      <div fxFlex fxLayoutAlign="center" style="margin-top:4rem;">
+        <div>
+          <div>
+            <div style="display: block">
+              <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                [colors]="colors">
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxFlex style="margin-top:4rem;">
+        <div fxLayout="row">
+          <div fxFlex fxLayoutAlign="end center" style="margin-right:2rem ;cursor: pointer;" (click)="redirecCharts()">
+              <img src="../../../assets/icons/walking-solid 1.svg">
+              <span style="margin-left:10px ; font-family: cursive;">Walking</span>
+          </div>
+          <div fxFlex fxLayoutAlign="start center">
+            <img src="../../../assets/icons/biking-solid 1.svg">
+            <span style="margin-left:10px ;font-family: cursive;">Cycling</span>
+          </div>
+
+        </div>
+  
+      </div>
+      <div fxFlex fxLayoutAlign="center">
+        
+      </div>
+
+      <div fxFlex fxLayoutAlign="center" style="margin-top:4rem ;">
+        <mat-card>
+          <div fxLayout="column">
+            <div fxFlex style="font-family: fantasy;color: #93C556;">
+              LEADERBOARD
+            </div>
+            <div fxFlex style="margin-top: 10px;">
+              <strong >
+                Top Of Groups With The Largest Trees Planted
+              </strong>
+            </div>
+            <div fxFlex>
+              <mat-card style="margin-top:2rem;">
+                <div fxLayout="row">
+                  <div fxFlex fxLayout="column">
+                    <div fxFlex>
+                      <strong>
+                        The Best of Bogota
+                      </strong>
+                    </div>
+                    <div fxFlex style="font-family: monospace;color:#CCCDC8;">14 Trees</div>
+                  </div>
+                  <div fxFlex fxLayoutAlign="end center">
+                    <img src="../../../assets/images/first.png">
+                  </div>
+                </div>
+              </mat-card>
+              <mat-card style="margin-top:2rem;">
+                <div fxLayout="row">
+                  <div fxFlex fxLayout="column">
+                    <div fxFlex>
+                      <strong>
+                        Saving the planet
+                      </strong>
+                    </div>
+                    <div fxFlex style="font-family: monospace;color:#CCCDC8;">11 Trees</div>
+                  </div>
+                  <div fxFlex fxLayoutAlign="end center">
+                    <img src="../../../assets/images/Second.png">
+                  </div>
+                </div>
+              </mat-card>
+              <mat-card style="margin-top:2rem;">
+                <div fxLayout="row">
+                  <div fxFlex fxLayout="column">
+                    <div fxFlex>
+                      <strong>
+                        Superheros
+                      </strong>
+                    </div>
+                    <div fxFlex style="font-family: monospace;color:#CCCDC8;">7 Trees</div>
+                  </div>
+                  <div fxFlex fxLayoutAlign="end center">
+                    <img src="../../../assets/images/Third.png">
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      
+      
+      
+  </div>
+
+</div>

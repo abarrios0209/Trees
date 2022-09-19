@@ -1,0 +1,41 @@
+.image{
+    background-color: #F1F8E9;
+    width: 100%;
+    height: 100%;
+}
+
+.textUno{
+    color: #000000;
+    font-size:30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.textDos{
+    color:#8BC34A;
+    font-size:30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.textTres{
+    color:#CCCDC9;
+    font-size:25px;
+    text-align: center;
+}
+
+.colorButton{
+    background-color: #8BC34A;
+    color: #FFFFFF;
+    width: 15rem;
+    height: 4rem;
+}
+
+.textCuatro{
+    font-family: fangsong;
+    font-size: 18px;
+}
+
+.textCinco{
+    text-decoration: underline;
+    color: #8BC34A;
+}
